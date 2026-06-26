@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "Are the classes live or recorded?",
+    "answer": "All classes are live and interactive. Sessions are conducted via Google Meet or Zoom. Recordings are shared after each session so you can revise at your own pace."
+  },
+  {
+    "id": 2,
+    "question": "Do I need any prior experience to join?",
+    "answer": "No prior experience is needed for most courses. The HTML & CSS and Web Development Basics courses are designed for absolute beginners. For React and JavaScript Mastery, basic computer knowledge is sufficient."
+  },
+  {
+    "id": 3,
+    "question": "What is the batch size?",
+    "answer": "Group batches have a maximum of 5 students to ensure personalized attention. 1-on-1 sessions are also available for completely customized learning."
+  },
+  {
+    "id": 4,
+    "question": "How do I enroll?",
+    "answer": "Simply fill out the enquiry form on this website or send a WhatsApp message. I'll get back to you within 24 hours to discuss your goals and schedule your first session."
+  },
+  {
+    "id": 5,
+    "question": "Will I get a certificate after completing the course?",
+    "answer": "Yes! A course completion certificate is provided upon successful completion of all sessions and the final project."
+  },
+  {
+    "id": 6,
+    "question": "What if I miss a session?",
+    "answer": "Every session is recorded and shared. You can also schedule a makeup session in the same week at no extra cost."
+  },
+  {
+    "id": 7,
+    "question": "Is there any EMI or payment plan available?",
+    "answer": "Yes, I offer flexible payment plans. You can pay in 2 installments for any course. Contact me on WhatsApp to discuss the options."
+  }
+]

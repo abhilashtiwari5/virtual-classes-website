@@ -1,0 +1,17 @@
+{
+  "siteName": "CodeWithAbhilash",
+  "tagline": "Learn React, JavaScript & Web Development — Live, Online, 1-on-1",
+  "instructorName": "Abhilash Tiwari",
+  "email": "abhilashtiwari5@gmail.com",
+  "whatsapp": "919999999999",
+  "phone": "+91-9999999999",
+  "location": "India (Online Worldwide)",
+  "socialLinks": {
+    "linkedin": "https://linkedin.com/in/abhilashtiwari5",
+    "github": "https://github.com/abhilashtiwari5",
+    "youtube": "",
+    "instagram": ""
+  },
+  "ga4MeasurementId": "G-XXXXXXXXXX",
+  "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID"
+}

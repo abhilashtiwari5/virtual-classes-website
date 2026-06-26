@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "CodeWithAbhilash — Online React, JavaScript & Web Dev Live Classes",
+    "description": "Learn React, JavaScript, HTML, CSS & Web Development through live virtual 1-on-1 classes with Abhilash Tiwari. Beginner-friendly. Enroll today!",
+    "keywords": ["online web development course india", "learn react js online", "javascript classes online india", "html css course online", "virtual programming classes", "1 on 1 coding classes online"],
+    "ogImage": "/og-image.jpg"
+  },
+  "courses": {
+    "title": "All Programming Courses — CodeWithAbhilash",
+    "description": "Explore live online courses in React.js, JavaScript, HTML & CSS, and Web Development basics. 1-on-1 and group batches available.",
+    "keywords": ["online programming courses india", "react javascript html css courses", "live coding classes online"],
+    "ogImage": "/og-image.jpg"
+  },
+  "about": {
+    "title": "About Abhilash Tiwari — Web Dev Instructor | CodeWithAbhilash",
+    "description": "Meet Abhilash Tiwari, a passionate web developer and online instructor teaching React, JavaScript, and Web Development live online.",
+    "keywords": ["abhilash tiwari web developer", "online coding instructor india", "react js teacher online"],
+    "ogImage": "/og-image.jpg"
+  },
+  "contact": {
+    "title": "Contact & Enroll — CodeWithAbhilash",
+    "description": "Get in touch with Abhilash Tiwari to enroll in live online programming classes. Fill the enquiry form or WhatsApp directly.",
+    "keywords": ["enroll online coding class", "contact coding instructor india", "join web development class"],
+    "ogImage": "/og-image.jpg"
+  }
+}
