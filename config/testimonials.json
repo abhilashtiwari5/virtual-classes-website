@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Priya Sharma",
+    "role": "Frontend Developer",
+    "company": "TCS",
+    "review": "Abhilash's React course completely changed my career. The live sessions and real-project approach made everything click. I landed my first dev job within 3 months!",
+    "rating": 5,
+    "avatar": "PS"
+  },
+  {
+    "id": 2,
+    "name": "Rohit Verma",
+    "role": "Freelance Developer",
+    "company": "Self-employed",
+    "review": "The JavaScript Mastery course is top-notch. Abhilash explains complex concepts in a very simple way. The 1-on-1 sessions are worth every rupee.",
+    "rating": 5,
+    "avatar": "RV"
+  },
+  {
+    "id": 3,
+    "name": "Sneha Patel",
+    "role": "UI Developer",
+    "company": "Infosys",
+    "review": "I started with zero knowledge of HTML and CSS. After completing the course, I built my own portfolio website. Abhilash is a patient and brilliant teacher!",
+    "rating": 5,
+    "avatar": "SP"
+  },
+  {
+    "id": 4,
+    "name": "Arjun Mehta",
+    "role": "Full Stack Developer",
+    "company": "Startup",
+    "review": "The Web Development Basics bootcamp gave me the strong foundation I needed. Abhilash covers everything thoroughly and the pace is perfect for beginners.",
+    "rating": 5,
+    "avatar": "AM"
+  }
+]
