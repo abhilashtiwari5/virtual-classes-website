@@ -19,15 +19,9 @@ const initialState: FormState = {
   message: "",
 };
 
-export default function EnquiryForm({
-  courses,
-  formspreeEndpoint,
-}: {
-  courses: Course[];
-  formspreeEndpoint: string;
-}) {
+export default function EnquiryForm({ courses }: { courses: Course[] }) {
   const [form, setForm] = useState<FormState>(initialState);
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
 
   const validate = () => {
@@ -46,14 +40,27 @@ export default function EnquiryForm({
 
     if (!validate()) return;
 
+    setStatus("loading");
+
     try {
-      const response = await fetch(formspreeEndpoint, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          access_key: "71c045ec-0dff-49bf-ba7e-29accfc653c6",
+          subject: `New Course Enquiry from ${form.fullName}`,
+          from_name: form.fullName,
+          name: form.fullName,
+          email: form.email,
+          phone: form.phone,
+          course: form.course,
+          message: form.message,
+        }),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.success) {
         setStatus("success");
         setForm(initialState);
         setErrors({});
@@ -101,8 +108,12 @@ export default function EnquiryForm({
         {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
       </div>
 
-      <button type="submit" className="w-full rounded-md bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700">
-        Submit Enquiry
+      <button
+        type="submit"
+        disabled={status === "loading"}
+        className="w-full rounded-md bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700 disabled:opacity-60"
+      >
+        {status === "loading" ? "Sending..." : "Submit Enquiry"}
       </button>
 
       {status === "success" && <p className="text-sm font-medium text-green-700">✅ Thank you! I&apos;ll get back to you within 24 hours.</p>}
