@@ -21,7 +21,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold text-slate-900">Send an Enquiry</h2>
           <p className="mt-2 text-slate-600">Fill this form and I&apos;ll respond within 24 hours.</p>
           <div className="mt-4">
-            <EnquiryForm courses={courses} formspreeEndpoint={site.formspreeEndpoint} />
+            <EnquiryForm courses={courses} />
           </div>
         </section>
 
