@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Course } from "@/lib/types";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function CourseCard({ course }: { course: Course }) {
   return (
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
       <Image
-        src={course.image}
+        src={`${BASE_PATH}${course.image}`}
         alt={`${course.title} course cover image`}
         width={600}
         height={340}
